@@ -79,4 +79,4 @@ If daily work reveals that the canon is wrong, the discrepancy is documented and
 ---
 
 *Powered by [NWOS](https://nwos.app) — Numen Workspace Operating System*
-*License: CC0 1.0 Universal*
+*© {{COMPANY_NAME}}. All rights reserved.*
