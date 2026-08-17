@@ -11,6 +11,14 @@
 #   LICENSE, LICENSES/, REUSE.toml, TRADEMARKS.md, LEGAL_DEBT.md
 # Renamed by nwos-deploy after generation:
 #   LICENSE.client -> LICENSE (placeholders resolved)
+#
+# This strip list is the contract with nwos-deploy, verified complete
+# against the full file inventory on 2026-08-17: every other file in the
+# repository is client scaffold and is emitted as-is. Any file added to
+# the mould later that is Numen's rather than the client's MUST be added
+# to the strip list above in the same commit that adds the file —
+# anything absent from this list reaches every generated client
+# workspace verbatim.
 
 version = 1
 
