@@ -1,0 +1,24 @@
+Copyright (c) {{DEPLOY_DATE}} {{COMPANY_NAME}}. All rights reserved.
+
+This repository and all of its contents — including, without limitation,
+the mission, vision, values, culture, organizational structure, glossary,
+agent profiles, missions, protocols, decisions, reports, and any other
+documents or files it contains — are the exclusive property of
+{{COMPANY_NAME}}.
+
+No rights are granted. No permission is given to use, copy, reproduce,
+modify, adapt, publish, distribute, sublicense, sell, or create derivative
+works from any part of this repository, in any form or by any means,
+without the prior written consent of {{COMPANY_NAME}}.
+
+This notice is a licence of reservation. It exists to state expressly that
+no licence is granted: the absence of a licence would be legally equivalent
+to reservation, but silence does not declare, and what is reserved must be
+declared just like what is open.
+
+This workspace was generated with NWOS (Numen Workspace Operating System),
+a tool of Numen Games S.L. The generator does not propagate its own licence
+to what it generates: Numen Games S.L. claims no ownership of, and grants
+no rights over, the contents of this repository. Trademarks, including
+"NWOS", remain the property of their respective owners; nothing in this
+repository grants any trademark rights.
