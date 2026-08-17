@@ -8,7 +8,8 @@
 #      own licence to what it generates.
 #
 # Mould-only artifacts, stripped by nwos-deploy after generation:
-#   LICENSE, LICENSES/, REUSE.toml, TRADEMARKS.md, LEGAL_DEBT.md
+#   LICENSE, LICENSES/, REUSE.toml, TRADEMARKS.md, LEGAL_DEBT.md,
+#   tests/, .github/
 # Renamed by nwos-deploy after generation:
 #   LICENSE.client -> LICENSE (placeholders resolved)
 #

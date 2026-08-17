@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2026 Numen Games S.L.
+# SPDX-License-Identifier: MIT
+#
+# Merging to main replicates into every generated workspace, so every
+# change needs the Oracle's review; the licensing-critical paths are
+# listed explicitly so the requirement survives any future loosening of
+# the catch-all rule.
+
+*                       @PabloFMM
+
+LICENSE                 @PabloFMM
+LICENSE.client          @PabloFMM
+/LICENSES/              @PabloFMM
+REUSE.toml              @PabloFMM
+TRADEMARKS.md           @PabloFMM
+LEGAL_DEBT.md           @PabloFMM
+/tests/                 @PabloFMM
+/.github/               @PabloFMM
