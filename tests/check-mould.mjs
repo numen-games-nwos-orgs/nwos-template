@@ -106,8 +106,10 @@ for (const f of emitted) {
 if (has("DESIGN_SYSTEM_TEMPLATE.md")) {
   const t = read("DESIGN_SYSTEM_TEMPLATE.md");
   check(/^version: \d+\.\d+\.\d+$/m.test(t), "DESIGN_SYSTEM_TEMPLATE.md: no semver version in frontmatter");
+  // REUSE-IgnoreStart — the literals below are content we scan for, not this file's tags.
   check(t.includes("<!-- SPDX-License-Identifier: MIT -->"), "DESIGN_SYSTEM_TEMPLATE.md: SPDX license comment missing");
   check(t.includes("<!-- SPDX-FileCopyrightText: Numen Games S.L. -->"), "DESIGN_SYSTEM_TEMPLATE.md: SPDX copyright comment missing");
+  // REUSE-IgnoreEnd
   if (has("design.tokens.schema.json")) {
     const block = /```json\n([\s\S]*?)```/.exec(t)?.[1] ?? "";
     check(block.replace(/\n$/, "") === read("design.tokens.schema.json").replace(/\n$/, ""),
