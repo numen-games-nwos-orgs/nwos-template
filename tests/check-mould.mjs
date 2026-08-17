@@ -137,7 +137,30 @@ if (has("design.tokens.schema.json")) {
   }
 }
 
-// ---- 7 · Placeholders are well-formed {{UPPER_SNAKE}} ------------------
+// ---- 7 · Presence checks (ENGINEERING_STANDARDS §3.3) ------------------
+// Conditional on the standards doc existing, so the check activates with it.
+if (has("ENGINEERING_STANDARDS.md")) {
+  check(has("CLAUDE.md"), "AGT-01: CLAUDE.md missing at repo root");
+  if (has("CLAUDE.md")) {
+    check(read("CLAUDE.md").includes("audit the current branch state"),
+      "AGT-01: CLAUDE.md must open with the audit-first instruction");
+  }
+  check(has(".github/SECURITY.md"), "SEC-09: .github/SECURITY.md missing");
+  check(has(".github/CODEOWNERS"), "SEC-10: .github/CODEOWNERS missing");
+  check(has(".github/pull_request_template.md"), "PM-02: PR template missing");
+  check(has("LICENSES/CC-BY-4.0.txt"),
+    "ARC-03: ENGINEERING_STANDARDS.md is CC-BY-4.0 but LICENSES/ lacks the text");
+  for (const wf of ["ci.yml", "scorecard.yml"]) {
+    if (!has(`.github/workflows/${wf}`)) continue;
+    const y = read(`.github/workflows/${wf}`);
+    check(/^permissions: read-all$/m.test(y), `SEC-08: ${wf} missing top-level read-all permissions`);
+    for (const m of y.matchAll(/uses:\s*(\S+)/g)) {
+      if (!/@[0-9a-f]{40}( |$)/m.test(m[1] + " ")) fail(`SEC-07: unpinned action in ${wf}: ${m[1]}`);
+    }
+  }
+}
+
+// ---- 8 · Placeholders are well-formed {{UPPER_SNAKE}} ------------------
 const placeholders = new Set();
 for (const f of emitted) {
   for (const m of read(f).matchAll(/\{\{([^}]*)\}\}/g)) {

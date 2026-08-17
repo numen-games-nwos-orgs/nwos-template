@@ -29,6 +29,14 @@ precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 Numen Games S.L."
 SPDX-License-Identifier = "MIT"
 
+# Engineering Standards is documentation (C-005: docs regime), declared
+# by its own inline SPDX comment; "closest" lets the in-file tag govern.
+[[annotations]]
+path = "ENGINEERING_STANDARDS.md"
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Numen Games S.L."
+SPDX-License-Identifier = "CC-BY-4.0"
+
 # LICENSE.client is a template artifact, not an active grant in this
 # repository: it is the reserved-rights LICENSE that C-005 §2.5 requires
 # the mould to emit in the client's name. It reserves rights for a
