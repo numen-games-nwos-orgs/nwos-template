@@ -55,12 +55,21 @@ Sobre lo ya ofrecido, si la determinación es que hubo concesión efectiva,
 no existe salida: la renuncia es irrevocable por construcción (como
 LD-001).
 
-**Consecuencia operativa.** Hasta la determinación, el contenido del molde
-publicado durante la ventana se trata como potencialmente CC0. La marca
-no: CC0 nunca cedió los identificadores de §7 (`TRADEMARKS.md`). Además,
-cada workspace de cliente generado durante la ventana recibió copia del
-`LICENSE` truncado y del pie CC0. El contenido del cliente **no** quedó
-dedicado por ello — CC0 renuncia a derechos propios y no puede renunciar a
-los de otro (§2)—, pero cada uno de esos repositorios afirma hoy sobre sí
-mismo un régimen falso, y su corrección corresponde al lado de
-`nwos-deploy`, fuera del alcance de este repositorio.
+**Consecuencia operativa.** Hasta la determinación de [ABOGADO], el
+contenido del molde publicado durante la ventana se trata como
+potencialmente CC0. La marca no: CC0 nunca cedió los identificadores de §7
+(`TRADEMARKS.md`).
+
+**Resolución parcial (Oráculo, 2026-08-17) — workspaces generados en la
+ventana.** Cada workspace de cliente generado durante la ventana recibió
+copia del `LICENSE` truncado y del pie CC0. El contenido del cliente **no**
+quedó dedicado por ello — CC0 renuncia a derechos propios y no puede
+renunciar a los de otro (§2). El Oráculo determina que todos los workspaces
+generados antes del corte son pruebas de concepto y serán eliminados: la
+exposición queda resuelta por eliminación y no se necesita vía de
+remediación. La fusión de `audit/c005-licensing` en `main` cumple la
+condición 1 del umbral y cierra la oferta hacia adelante.
+
+Queda abierta únicamente la condición 2: la determinación de [ABOGADO]
+sobre el efecto de la oferta pasada respecto del contenido del propio
+molde, que registra el Oráculo en esta entrada.
