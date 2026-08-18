@@ -1,0 +1,45 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "NWOS Design System Contract v0.1.0 · keys frozen, values per organization",
+  "color": {
+    "brand": {
+      "accent": { "$value": null, "$description": "Primary brand accent. May be null (monochrome brand)." },
+      "accent-2": { "$value": null, "$description": "Optional support accent." },
+      "accent-text": { "$value": null, "$description": "Accent shade valid as text on light (≥4.5:1)." }
+    },
+    "semantic": {
+      "interactive": { "$value": null, "$description": "Links, focus, selection. Defaults to ink." },
+      "action-fill": { "$value": null, "$description": "Primary button fill; its label must reach ≥4.5:1." },
+      "action-hover": { "$value": null }, "action-active": { "$value": null },
+      "success": { "$value": null }, "warning": { "$value": null }, "critical": { "$value": null },
+      "success-on-light": { "$value": null }, "warning-on-light": { "$value": null }, "critical-on-light": { "$value": null }
+    },
+    "mode-light": {
+      "bg-base": { "$value": null }, "bg-surface": { "$value": null }, "bg-elevated": { "$value": null },
+      "line-subtle": { "$value": null }, "line-strong": { "$value": null },
+      "text-primary": { "$value": null }, "text-secondary": { "$value": null }, "text-tertiary": { "$value": null }
+    },
+    "mode-dark": {
+      "bg-base": { "$value": null }, "bg-surface": { "$value": null }, "bg-elevated": { "$value": null },
+      "line-subtle": { "$value": null }, "line-strong": { "$value": null },
+      "text-primary": { "$value": null }, "text-secondary": { "$value": null }, "text-tertiary": { "$value": null }
+    }
+  },
+  "typography": {
+    "family-sans": { "$value": null }, "family-mono": { "$value": null },
+    "scale-ratio": { "$value": null }, "size-base": { "$value": null },
+    "weight-body": { "$value": null }, "weight-heading": { "$value": null }
+  },
+  "space": { "unit": { "$value": null }, "scale": { "$value": null, "$description": "Ordered list of steps." } },
+  "radius": { "control": { "$value": null }, "frame": { "$value": null }, "full": { "$value": "9999px" } },
+  "motion": {
+    "instant": { "$value": null }, "short": { "$value": null }, "long": { "$value": null },
+    "easing": { "$value": null }
+  },
+  "density": { "row": { "$value": null, "$description": "Platform table/list row height." } },
+  "assets": {
+    "logo-primary": { "$value": null, "$description": "Path. SVG normalized to currentColor when mono-viable." },
+    "logo-mark": { "$value": null }, "logo-min-width": { "$value": null }
+  },
+  "provenance": { "$value": null, "$description": "Filled by the agent: per-token source map." }
+}
